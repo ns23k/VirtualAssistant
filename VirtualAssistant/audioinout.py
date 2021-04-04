@@ -11,7 +11,8 @@ def speak(audio):
     engine.runAndWait()
 
 def takecommand(saythatagain=True):
-    '''takes command'''
+    '''takes command (it recognizes thespech spoken by the user)'''
+    '''this is still under progress so this is just beta'''
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print('Listening......')
