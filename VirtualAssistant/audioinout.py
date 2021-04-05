@@ -14,7 +14,7 @@ def speak(audio,voice=0):
     engine.say(audio)
     engine.runAndWait()
 
-def takecommand(saythatagain=True):
+def takecommand(saythatagain=True,usersaid=True,listening_recognizing=True):
     '''takes command (it recognizes the speech spoken by the user)'''
     '''this is still under progress so this is just beta'''
     r = sr.Recognizer()
@@ -23,12 +23,14 @@ def takecommand(saythatagain=True):
         r.pause_threshold = 1
         audio = r.listen(source)
     try:
-        print('Recogizing....')
+        if listening_recognizing is True:
+            print('Recogizing....')
         query = r.recognize_google(audio,language='en-in')
-        print(f"User Said:{query}\n")
+        if usersaid is True:
+            print(f"User Said:{query}\n")
 
     except Exception as e:
-        if saythatagain == True:
+        if saythatagain is True:
             speak("Say That again please....")
             print("Say That again please....")
         return "None"
