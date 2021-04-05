@@ -3,10 +3,14 @@
 import speech_recognition as sr
 import pyttsx3
 
-def speak(audio):
+def speak(audio,voice=0):
+    global engine,voices
     engine = pyttsx3.init('sapi5')
     voices = engine.getProperty('voices')
-    engine.setProperty('voice',voices[0].id)
+    try:
+        engine.setProperty('voice',voices[voice].id)
+    except:
+        print('no more voices found')
     engine.say(audio)
     engine.runAndWait()
 
@@ -29,3 +33,10 @@ def takecommand(saythatagain=True):
             print("Say That again please....")
         return "None"
     return query
+
+def getvoices(number=0):
+  engine.getProperty('voices')
+  try:
+    return voices[number].id
+  except:
+      return f'error: No voices found for {number}'
