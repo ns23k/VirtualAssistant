@@ -4,7 +4,7 @@ setup(
     name='VirtualAssistant',
     version='0.0.1',
     packages=['VirtualAssistant'],
-    install_requires=['pyttsx3','SpeechRecognition','colorama'],
+    install_requires=['pyttsx3','SpeechRecognition','colorama','pywhatkit'],
     url='https://github.com/Naman23-coder/VirtualAssistant',
     license='MIT',
     author='Naman Sharma , Devansh Sareen',
