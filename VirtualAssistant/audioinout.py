@@ -26,6 +26,6 @@ def takecommand(saythatagain=True):
     except Exception as e:
         if saythatagain == True:
             speak("Say That again please....")
-        print("Say That again please....")
+            print("Say That again please....")
         return "None"
     return query
