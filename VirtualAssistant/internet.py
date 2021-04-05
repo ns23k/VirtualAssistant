@@ -39,7 +39,7 @@ def openfacebook():
 
 
 def openwebsite(url):
-    '''it open the url user in form of a string in the default web browser
+    '''it open the url user gave in form of a string in the default web browser
     using webbrowser module
     '''
     speak(f'opening {url}')
