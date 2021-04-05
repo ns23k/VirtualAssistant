@@ -1,6 +1,7 @@
 import webbrowser
-from .audioinout import speak
-
+from .audioinout import speak,takecommand
+import pywhatkit
+import wikipedia
 
 def opengoogle():
     '''
@@ -39,7 +40,7 @@ def openfacebook():
 
 
 def openwebsite(url):
-    '''it open the url user gave in form of a string in the default web browser
+    '''it open the url user in form of a string in the default web browser
     using webbrowser module
     '''
     speak(f'opening {url}')
@@ -54,8 +55,23 @@ def opengithub():
 
 
 
-def searchgoogle(query):
+def searchgoogle():
     ''' it searches google for the query you gave to it '''
+    speak('on which topic you wanna search google?')
+    query = takecommand()
     speak('searching google')
     url = f'https://www.google.com/search?q={query}'
     webbrowser.open(url)
+
+
+def playvidonyt():
+    speak('please tell on which topic you want to see a video')
+    topic = takecommand()
+    speak(f'opening video on {topic}')
+    pywhatkit.playonyt(topic)
+
+def speakwikisummary(sentences=2):
+    speak('what would you like to search on wikipedia?')
+    thing = takecommand()
+    summary = wikipedia.summary(thing,sentences=sentences)
+    speak(summary)
