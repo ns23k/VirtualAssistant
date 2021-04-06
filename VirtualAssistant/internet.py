@@ -75,3 +75,39 @@ def speakwikisummary(sentences=2):
     thing = takecommand()
     summary = wikipedia.summary(thing,sentences=sentences)
     speak(summary)
+def sendemail(email=None,password=None):
+    # little buggy version
+    def remove(string):
+        return "".join(string.split())
+    if password is None:
+        print(f'''{warning} please enter your password,password field can't be empty''')
+    if email is None:
+        print(f'''{warning} please enter your email,email field can't be empty''')
+
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.login(email,password)
+    speak('to whom you wanna send the email?')
+    emailaddress = takecommand()
+    if 'at the rate' or 'at the' or  'at the rate of' in emailaddress:
+        emailaddress.replace('at the rate','@')
+    if '@gmail.com' not in emailaddress:
+        emailaddress = emailaddress + '@gmail.com'
+    emailaddress = remove(emailaddress)
+    speak('what do you wanna say?')
+    content = takecommand()
+    speak(f'email would be sent to {emailaddress},the content in the mail would be {content}.Do you want me to send it?')
+    print(f'email would be sent to {emailaddress},the content in the mail would be {content}.Do you want me to send it?')
+    yesno = takecommand()
+    if yesno == 'yes':
+        try:
+            server.sendmail(email,emailaddress,content)
+            server.close()
+            speak('email sent')
+        except Exception as e:
+            speak(f'''couldn't send mail to {emailaddress} ''')
+            print(e)
+    else:
+        speak('Ok the email is canceled')
+        server.close()
