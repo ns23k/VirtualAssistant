@@ -1,4 +1,4 @@
-from .
+
 from .audioinout import (
                          takecommand,
                          speak,
