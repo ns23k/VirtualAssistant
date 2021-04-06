@@ -59,7 +59,7 @@ def searchgoogle():
     ''' it searches google for the query you gave to it '''
     speak('on which topic you wanna search google?')
     query = takecommand()
-    speak('searching google')
+    speak(f'searching google for {query}')
     url = f'https://www.google.com/search?q={query}'
     webbrowser.open(url)
 
