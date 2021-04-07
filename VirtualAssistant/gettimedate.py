@@ -11,7 +11,7 @@ def speaktime(format= 'thour'):
         strTime = datetime.datetime.now().strftime("%H:%M:%S")
         speak(f"Sir, the time is {strTime}")
 
-        def wishme(assistname = None):
+ def wishme(assistname = None):
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
         speak("Good Morning!")
