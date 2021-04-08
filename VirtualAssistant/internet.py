@@ -2,6 +2,7 @@ import webbrowser
 from .audioinout import speak,takecommand
 import pywhatkit
 import wikipedia
+import smtplib
 
 def opengoogle():
     '''
