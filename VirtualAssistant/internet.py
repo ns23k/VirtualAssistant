@@ -24,7 +24,7 @@ def openyoutube():
 
 def openwhatsappweb():
     '''
-    it will open web.whatsapp.con on your web browser
+    it will open web.whatsapp.com on your web browser
     '''
     speak('opening whatsapp web')
     webbrowser.open('https://web.whatsapp.com')
