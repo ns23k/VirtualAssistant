@@ -1,4 +1,8 @@
 
+from __future__ import absolute_import
+from .picture import (takescreenshotnow
+                      ,takescreenshot
+                      )
 from .audioinout import (
                          takecommand,
                          speak,
@@ -9,7 +13,9 @@ from .audioinout import (
 
 from .gettimedate import (
                         speaktime,
-                        wishme
+                        wishme,
+                        speakdate,
+
                     )
 
 
@@ -23,7 +29,7 @@ from .internet import (
                        searchgoogle,
                        playvidonyt,
                        speakwikisummary,
-                       sendemail
+                       sendemail,
                        )
 
 
@@ -33,5 +39,5 @@ from .computer import (
                        openfile,
                        openmsword,
                        openvscode,
-                        
+
                        )
