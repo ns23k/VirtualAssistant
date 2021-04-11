@@ -9,5 +9,5 @@ setup(
     license='MIT',
     author='Naman Sharma , Devansh Sareen',
     author_email='namansharma232009@gmail.com , devanshsareen@gmail.com',
-    description='VirtualAssistant is a python package that allowas user to make simple Virtual Assistants with already defined commands with only one import.'
+    description='VirtualAssistant is a python package that allows user to make simple Virtual Assistants with already defined commands with only one import.'
 )
