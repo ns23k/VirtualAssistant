@@ -1,11 +1,7 @@
 from PIL import ImageGrab
 from .audioinout import speak,takecommand
 import time
-
-class timeerror(Exception):
-    pass
-class error(Exception):
-    pass
+from .errors import error,timeerror
 
 def takescreenshotnow(filename=None,ext=None):
     if filename is None:
