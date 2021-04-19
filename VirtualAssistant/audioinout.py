@@ -27,14 +27,14 @@ def takecommand(saythatagain=True,usersaid=True,listening_recognizing=True):
             print('Recogizing....')
         query = r.recognize_google(audio,language='en-in')
         if usersaid is True:
-            print(f"User Said:{query}\n")
+            print(f"User Said:{query.lower()}\n")
 
     except Exception as e:
         if saythatagain is True:
             speak("Say That again please....")
             print("Say That again please....")
         return "None"
-    return query
+    return query.lower()
 
 def getvoices(number=0):
   engine.getProperty('voices')
