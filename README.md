@@ -10,7 +10,7 @@ The main package code is in [VirtualAssistant](https://github.com/Naman23-coder/
  
 ## Download VirtualAssistant for python 
 
-'''
+'''python
 pip install VirtualAssistant
 '''
  
