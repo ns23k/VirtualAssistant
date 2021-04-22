@@ -23,7 +23,7 @@ if __name__ == '__main__':
     query = va.takecommand()
     #all other code 
 ```
-##examples 
+## Examples 
 Examples can be found at [examples directory](examples)
 ## Licence
 Distributed under the MIT License. See [LICENCE](https://github.com/Naman23-coder/VirtualAssistant/blob/main/LICENSE) for more information..
