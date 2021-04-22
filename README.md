@@ -13,6 +13,7 @@ The main package code is in [VirtualAssistant](https://github.com/Naman23-coder/
 ```python
 pip install VirtualAssistant
 ```
- 
+## examples
+Examples can be found at [examples directory](examples)
 ## Licence
 Distributed under the MIT License. See [LICENCE](https://github.com/Naman23-coder/VirtualAssistant/blob/main/LICENSE) for more information..
