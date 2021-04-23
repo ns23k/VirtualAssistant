@@ -2,7 +2,6 @@
 Most of the features in this file are only for windows
 '''
 
-# under progress
 
 import os
 from .audioinout import speak
@@ -55,3 +54,4 @@ def openvscode():
         os.startfile(path)
     except:
         print(f'{warning} VS code is not present at {path}.It may not be installed on computer or it is saved on some different location')
+# more features coming soon
