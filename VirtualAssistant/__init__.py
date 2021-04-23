@@ -1,3 +1,5 @@
+# author:- Naman Sharma
+# report bugs at namansharma232009@gmail.com
 
 from __future__ import absolute_import
 from .picture import (takescreenshotnow
@@ -34,7 +36,7 @@ from .internet import (
 
 
 
-from .computer import (
+from .computer import (               
                        opencalc,
                        openfile,
                        openmsword,
