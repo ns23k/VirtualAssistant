@@ -3,10 +3,11 @@
 The main package code is in [VirtualAssistant](https://github.com/Naman23-coder/VirtualAssistant/tree/main/VirtualAssistant) directory
 
 
-## The emails of authors:-
+## The emails of author:-
  Naman Sharma - namansharma232009@gmail.com
- 
- Devansh Sareen - devanshsareen@gmail.com
+
+## email of contributer:-
+ Devansh sareen - devanshsareen@gmail.com
  
 ## Download VirtualAssistant for python 
 
