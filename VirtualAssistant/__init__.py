@@ -4,6 +4,7 @@
 
 
 from __future__ import absolute_import
+__version__ = '0.0.1'
 from .picture import (takescreenshotnow
                       ,takescreenshot
                       )
@@ -45,3 +46,4 @@ from .computer import (
                        openvscode,
 
                        )
+from .others import virtualassistquit
