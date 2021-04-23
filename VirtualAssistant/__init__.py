@@ -1,5 +1,7 @@
 # author:- Naman Sharma
 # report bugs at namansharma232009@gmail.com
+# for queries email at namansharma232009@gmail.com
+
 
 from __future__ import absolute_import
 from .picture import (takescreenshotnow
