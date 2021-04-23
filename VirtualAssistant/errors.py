@@ -1,5 +1,5 @@
-class error(Exeption):
+class error(Exception):
   pass
 
-class timeerror(Exeption):
+class timeerror(Exception):
   pass
