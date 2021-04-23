@@ -2,6 +2,8 @@
 
 The main package code is in [VirtualAssistant](https://github.com/Naman23-coder/VirtualAssistant/tree/main/VirtualAssistant) directory
 
+## pypi link:-
+https://pypi.org/project/VirtualAssistant/0.0.1/
 
 ## The emails of author:-
  Naman Sharma - namansharma232009@gmail.com
