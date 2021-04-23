@@ -76,8 +76,12 @@ def speakwikisummary(sentences=2):
     thing = takecommand()
     summary = wikipedia.summary(thing,sentences=sentences)
     speak(summary)
+    
 def sendemail(email=None,password=None):
     # little buggy version
+    # email = <youremail@gmail.com>
+    # password = <youpass>
+    #  if email is blah@gmail.com so just say blah the @gmail.com would be added automatically
     def remove(string):
         return "".join(string.split())
     if password is None:
@@ -91,8 +95,6 @@ def sendemail(email=None,password=None):
     server.login(email,password)
     speak('to whom you wanna send the email?')
     emailaddress = takecommand()
-    if 'at the rate' or 'at the' or  'at the rate of' in emailaddress:
-        emailaddress.replace('at the rate','@')
     if '@gmail.com' not in emailaddress:
         emailaddress = emailaddress + '@gmail.com'
     emailaddress = remove(emailaddress)
