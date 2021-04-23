@@ -26,5 +26,8 @@ if __name__ == '__main__':
 ```
 ## Examples 
 Examples can be found at [examples directory](examples)
+
+## docs
+still under devlopment
 ## Licence
 Distributed under the MIT License. See [LICENCE](https://github.com/Naman23-coder/VirtualAssistant/blob/main/LICENSE) for more information..
