@@ -3,7 +3,7 @@
 The main package code is in [VirtualAssistant](https://github.com/Naman23-coder/VirtualAssistant/tree/main/VirtualAssistant) directory
 
 ## pypi link:-
-https://pypi.org/project/VirtualAssistant/0.0.1/
+https://pypi.org/project/VirtualAssistant
 
 ## The emails of author:-
  Naman Sharma - namansharma232009@gmail.com
@@ -28,7 +28,7 @@ if __name__ == '__main__':
 ```
 ## Examples 
 Examples can be found at [examples directory](examples)
-
+Extra examples can be found [here](https://www.github.com/Naman23-coder/extra-examples)
 ## docs
 still under devlopment
 ## Licence
