@@ -1,9 +1,9 @@
 # VirtualAssistant
 
 # downloads :-  
-weekly - [![Downloads](https://static.pepy.tech/personalized-badge/virtualassistant?period=week&units=abbreviation&left_color=black&right_color=yellow&left_text=Downloads)](https://pepy.tech/project/virtualassistant)
+weekly - [![Downloads](https://pepy.tech/badge/virtualassistant/week)](https://pepy.tech/project/virtualassistant)
 
-monthly - [![Downloads](https://static.pepy.tech/personalized-badge/virtualassistant?period=month&units=abbreviation&left_color=black&right_color=yellow&left_text=Downloads)](https://pepy.tech/project/virtualassistant)
+monthly - [![Downloads](https://pepy.tech/badge/virtualassistant/month)](https://pepy.tech/project/virtualassistant)
 
 total - [![Downloads](https://pepy.tech/badge/virtualassistant)](https://pepy.tech/project/virtualassistant)
 
