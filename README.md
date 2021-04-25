@@ -5,7 +5,7 @@ weekly - [![Downloads](https://static.pepy.tech/personalized-badge/virtualassist
 
 monthly - [![Downloads](https://static.pepy.tech/personalized-badge/virtualassistant?period=month&units=abbreviation&left_color=black&right_color=yellow&left_text=Downloads)](https://pepy.tech/project/virtualassistant)
 
-total - [![Downloads](https://static.pepy.tech/personalized-badge/virtualassistant?period=total&units=abbreviation&left_color=black&right_color=yellow&left_text=Downloads)](https://pepy.tech/project/virtualassistant)
+total - [![Downloads](https://pepy.tech/badge/virtualassistant)](https://pepy.tech/project/virtualassistant)
 
 The main package code is in [VirtualAssistant](https://github.com/Naman23-coder/VirtualAssistant/tree/main/VirtualAssistant) directory
 
