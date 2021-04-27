@@ -3,7 +3,44 @@ from .audioinout import speak,takecommand
 import pywhatkit
 import wikipedia
 import smtplib
+import requests
 
+
+def speakweatherdata():
+    api_key = 'ed5c7180267b2b9bef91544f9592ce45'
+    speak("you want weather forcast for which city?")
+    city = takecommand()
+    if city == 'None':
+        pass # i would fix bugs in 0.0.4
+    json_data = requests.get(f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}").json()
+    temp = int(json_data['main']['temp'] - 273.15)
+    condition = json_data['weather'][0]['main']
+    min_temp = int(json_data['main']['temp_min'] - 273.15)
+    max_temp = int(json_data['main']['temp_max'] - 273.15)
+    pressure = json_data['main']['pressure']
+    humidity = json_data['main']['humidity']
+    wind = json_data['wind']['speed']
+    sunrise = time.strftime('%I:%M:%S', time.gmtime(json_data['sys']['sunrise'] - 21600))
+    sunset = time.strftime('%I:%M:%S', time.gmtime(json_data['sys']['sunset'] - 21600))
+    sr = sunrise.split(":")
+    ss = sunset.split(":")
+    if '0' in sr:
+        sr = sr.replace('0','')
+    if '0' in ss:
+        ss = ss.replace('0','')
+    sunrise = f"{ss[0]} o clock {ss[1]} minuites {ss[2]} seconds"
+    sunset = f"{sr[0]} o clock {sr[1]} minuites {sr[2]}seconds"
+    speak(f"""the condition in {city} is {condition}, 
+    the temprature is {temp} celsius,
+    the minimum temperature is {min_temp} celsius,
+    the maximum temperature is {max_temp} celsius,
+    the pressure is {pressure},
+    the humidity is {humidity} percent,
+    the wind speed is {wind} kilometer per hour,
+    the sunrise is at {sunrise},
+    the sunset is at {sunset}.
+          """)
+   
 def opengoogle():
     '''
     it will open google.com on your web browser
