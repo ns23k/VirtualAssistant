@@ -20,7 +20,7 @@ https://pypi.org/project/VirtualAssistant
  
 ## Download VirtualAssistant for python 
 
-```python
+```shell
 pip install VirtualAssistant
 ```
 ## base of code
