@@ -7,7 +7,7 @@ def readme():
 # contributer = Devansh Sareen
 setup(
     name='VirtualAssistant',
-    version='0.0.2.0',
+    version='0.0.3',
     packages=['VirtualAssistant'],
     install_requires=['pyttsx3','SpeechRecognition','colorama','pywhatkit'],
     url='https://github.com/Naman23-coder/VirtualAssistant',
